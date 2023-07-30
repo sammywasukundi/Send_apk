@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,
     wght@0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">
 </head>
-<body>
+<body onscroll="scroll()" onload="album()">
 
     <header>
         <a href="#" class="logo">
@@ -24,53 +24,63 @@
         </a>
         <ul class="navlist">
             <li>
-                <input 
-                class="searchbar"
-                style="
-                padding: 6px 6px;
-                margin: 0 5px 20px 0;
-                border-radius: 5px;
-                outline: none;
-                width: 250px;
-                background-color: transparent;
-                border: 1px solid #4d9559;"
-                type="search" placeholder="Rechercher"> <!--<i class="ri-search-line"></i>--></li> 
+                <input class="search" type="search" placeholder="Rechercher">
+                <a href="#" class="loop"><i class="ri-search-line"></i></a>
+            </li> 
             <li><a href="index.html">Accueil</a></li>
             <li><a href="assets/user.html">Utilisateur</a></li>
-            <li><a href="#">Administrateur</a></li>
+            <li><a href="assets/admin.html">Administrateur</a></li>
             <li><a href="assets/inscription.html">Inscription</a></li>
-            <li><a href="assets/connexion.html">Connexion</a></li>
+            <li><a href="assets/connexion.html" class="ctaa"><i class="ri-login-box-line"></i><span>  </span>Connexion</a></li>
         </ul>
         <div class="bx bx-menu" id="menu-icon"></div>
     </header>
     <section class="hero">
         <div class="hero-text">
             <h5>Envoyez partout où vous voulez</h5>
-            <h4>avec notre application</h4>
+            <!-- <h4>avec notre application</h4> -->
             <h1>TUMA</h1>
             <p>TUMA est une plateforme de messagerie ayant pour grand rôle d'envoyer des bons de livraisons à qui de droit</p>
             <a href="assets/inscription.html">Inscription</a>
             <a href="assets/connexion.html" class="ctaa"><i class="ri-login-box-line"></i><span>  </span>Connexion</a>
         </div>
         <div class="hero-img">
-            <img src="assets/img/send_homme.png" alt="description apk">
+            <img src="assets/img/caroussel/livrer1.jpg" alt="description apk" id="idImage" class="clImage">
         </div>
+        
     </section>
     <div class="icons">
         <a href="#"><i class="ri-facebook-fill"></i></a>
         <a href="#"><i class="ri-github-fill"></i></a>
         <a href="#"><i class="ri-twitter-fill"></i></a>
+        <a href="#"><i class="ri-smartphone-fill"></i></a>
     </div>
+    <section class="hero">
+        <div class="hero-text">
+            <h1 style="font-size: 70px;">Utilisateur</h1>
+        </div>
+        <div class="hero-img" id="img_user">
+            <a href="assets/user.html"><img src="assets/img/user.png" alt="description apk"></a>
+        </div>
+    </section>
+    <section class="hero">
+        <div class="hero-text">
+            <h1 style="font-size: 48px;">Administrateur</h1>
+        </div>
+        <div class="hero-img" id="img_user">
+            <a href="assets/admin.html"><img src="assets/img/admin.jpg" alt="description apk"></a>
+        </div>
+    </section>
     <div class="scroll-down">
-        <a href="#"><i class="ri-arrow-down-s-fill"></i></a>
+        <a href="#"><i class="ri-arrow-up-s-fill"></i></a>
     </div>
-    <footer class="foot">
+    <!-- <footer class="foot">
         <div class="pieds">
             <p class="nom">Made by SammyWasukundi</p>
-        </div>
+        </div>-->
         <!-- javascript -->
         <script src="https://unpkg.com/scrollreveal"></script>
         <script src="js/script.js"></script>
-    </footer>
+    </footer> 
 </body>
 </html>

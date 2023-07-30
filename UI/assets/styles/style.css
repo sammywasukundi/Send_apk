@@ -25,6 +25,29 @@ header{
     padding: 33px 9%;
     background: transparent;
 }
+body{
+    background: var(--main-color);
+    position: relative;
+}
+.search{
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid var(--third-color);
+    background-color: var(--main-color);
+    margin-top: -6px;
+}
+:placeholder-shown{
+    padding: 5px 5px;
+    text-align: left;
+}
+/* using fo javascript */
+.newClass{
+    box-shadow: rgba(226, 233, 230, 0.12) 0px 2px 4px 0px, rgba(232, 240, 237, 0.32) 0px 2px 16px 0px;
+    border-bottom: 1px transparent var(--white-color);
+    backdrop-filter: blur(10px);
+    margin-bottom: -5px;
+}
+
 .logo{
     font-size: 30px;
     font-weight: 600;
@@ -53,21 +76,24 @@ header{
     display: none;
 }
 .hero{
-    height: 100%;
+    height: auto;
     width: 100%;
-    min-height: 100vh;
-    background: var(--main-color);
-    position: relative;
+    margin: 140px 0;
+    /* min-height: 100vh; */
     display: flex;
     grid-template-columns: repeat (2, 1fr);
     align-items: center;
     gap: 2rem;
 }
 section{
-    padding: 0 19%;
+    padding: 0 22%;
+    margin: 15px 0;
+}
+.hero-text{
+    padding-left: 50px;
 }
 .hero-text h5{
-    font-size: 14px;
+    font-size: 24px;
     font-weight: 600;
     color: var(--white-color);
     margin-bottom: 40px;
@@ -82,21 +108,25 @@ section{
     letter-spacing: 4px;
 }
 .hero-text h4{
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 600;
     color: var(--second-color);
     margin-bottom: 10px;
 }
 .hero-text p{
-    font-size: 15px;
+    font-size: 18px;
     color: var(--white-color);
     line-height: 1.9;
     margin-bottom: 40px;
     font-weight: 600;
 }
 .hero-img img{
+    padding: 30px 20px;
     width: 550px;
     height: auto;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 30px 90px;
+    object-fit: cover;
 }
 .hero-text a{
     display: inline-block;
@@ -128,9 +158,13 @@ section{
     margin-right: 5px;
     color: var(--white-color);
 }
+.clImage{
+    opacity:0;
+    filter:alpha(opacity=0);
+}
 .icons{
     position: absolute;
-    top: 50%;
+    top: 15%;
     padding: 0 9%;
     transform: translateY(-50%);
 }
@@ -148,7 +182,7 @@ section{
 }
 .scroll-down{
     position: absolute;
-    bottom: 16%;
+    bottom: 2px;
     right: 9%;
 }
 .scroll-down i{
@@ -237,13 +271,13 @@ section{
     .pieds{
         width: 94%;
         height: auto;
-        position: fixed;
+        position: absolute;
         bottom: 15px;
     }
     .foot{
         width: 94%;
         height: auto;
-        position: fixed;
+        position: absolute;
         opacity: 0.3;
     }
 }
@@ -348,13 +382,13 @@ section{
     .pieds{
         width: 94%;
         height: auto;
-        position: fixed;
+        position: absolute;
         bottom: 15px;
     }
     .foot{
         width: 94%;
         height: auto;
-        position: fixed;
+        position: absolute;
         opacity: 0.3;
     }
 }

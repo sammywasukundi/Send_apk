@@ -16,7 +16,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,
         wght@0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">
     </head>
-<body>
+<body onscroll="scroll()">
     <header>
         <a href="#" class="logo">
             <span style="letter-spacing: 4px; color: #4d9559; font-family: 'Permanent marker', cursive; text-shadow: 1px 1px 1px #ffffff; font-size: 35px;">TUMA</span>
@@ -25,17 +25,9 @@
         </a>
         <ul class="navlist">
             <li>
-                <input 
-                class="searchbar"
-                style="
-                padding: 6px 6px;
-                margin: 0 5px 20px 0;
-                border-radius: 5px;
-                outline: none;
-                width: 250px;
-                background-color: transparent;
-                border: 1px solid #4d9559;"
-                type="search" placeholder="Rechercher"> <!--<i class="ri-search-line"></i>--></li> 
+                <input class="search" type="search" placeholder="Rechercher">
+                <a href="#" class="loop"><i class="ri-search-line"></i></a>
+            </li> 
             <li><a href="../index.html">Accueil</a></li>
             <li><a href="user.html">Utilisateur</a></li>
             <li><a href="#">Administrateur</a></li>
@@ -44,6 +36,37 @@
         </ul>
         <div class="bx bx-menu" id="menu-icon"></div>
     </header>
+    <section class="hero">
+        <div class="hero-div">
+            <div class="contenu">
+                <img id="profil" src="img/fille_profil.avif" alt="profil">
+                    <h2>Sammy 12</h2>
+                <div class="icones">
+                    <a href="#"><i class="ri-facebook-fill"></i></a>
+                    <a href="#"><i class="ri-github-fill"></i></a>
+                    <a href="#"><i class="ri-twitter-fill"></i></a>
+                    <a href=""><i class="ri-user-line"></i></a>
+                </div> 
+                <a href="" id="change">Changer de profil</a>
+            </div>
+        </div>
+        <div class="hero-div">
+            <div class="contenu">
+                <img id="profil" src="img/profil.avif" alt="profil">
+                <div class="nom">
+                    <h2>Sammy 12</h2>
+                </div>                 
+            </div>
+        </div>
+        <div class="hero-div">
+            <div class="contenu">
+                <img id="profil" src="img/profil.avif" alt="profil">
+                <div class="nom">
+                    <h2>Sammy 12</h2>
+                </div>                 
+            </div>
+        </div>
+    </section>
     <section class="hero">
         <div class="hero-div">
             <div class="contenu">
