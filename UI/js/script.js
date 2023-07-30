@@ -31,6 +31,16 @@ btn.addEventListener('click',function(){
     }
 })
 
+const create_btn = document.querySelector('#create_bon');
+const hidden_form = document.querySelector('.formulaire');
+create_btn.addEventListener('click', function(){
+    if(getComputedStyle(hidden_form).visibility != 'visible'){
+        hidden_form.style.visibility='visible';
+    }else{
+        hidden_form.style.visibility='hidden';
+    }
+})
+
 function scroll(){
     document.getElementsByTagName("header").item(0).className="newClass";
 }

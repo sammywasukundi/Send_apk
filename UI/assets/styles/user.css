@@ -8,21 +8,20 @@
 
   .hero-div{
       display: block;
-      align-items: start;
-      justify-content: start;
+      align-items: center;
+      justify-content: center;
       box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
       border-radius: 10px;
       background-color: transparent;
       backdrop-filter: blur(1px);
-      padding: 20px 20px;
-      width: 25%;
+      width: 30%;
   }
   .contenu{
       display: block;
       justify-content: center;
       align-items: center;
+      padding: 10px 10px;
   }
-
   .contenu #profil{
     /* clip-path: ellipse(100% 100%); */
     border-radius: 6%;
@@ -30,7 +29,7 @@
     height: auto;
     object-fit: cover;
     border: 2px solid var(--white-color);
-    margin: 0 30px;
+    margin: 5px 25%;
   }
   .contenu h2{
       font-weight: 600;
@@ -38,13 +37,8 @@
       text-shadow: none;
       color: var(--forth-color);
       letter-spacing: normal;
-      margin: 10px 20%;
-  }
-  .contenu #change{
-    font-weight: 400;
-    font-family: Arial, Helvetica, sans-serif;
-    color: var(--white-color);
-    margin: 0 20%;
+      margin: 20px 30%;
+      width: 150px;
   }
 .icones i{
     margin: 0 7px;
@@ -75,4 +69,35 @@
     font-weight: 600;
     font-family: 25px;
     color: var(--white-color);
+}
+.contenu-btn{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px; 
+  }
+.buttons{
+    display: block;
+    color: var(--white-color);
+    background: var(--second-color);
+    border: 1px solid transparent;
+    margin: 10px 0;
+    padding: 12px 25px;
+    line-height: 1.4;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 30px;
+    transition: all .55 linear;
+    width: 290px;
+}
+.buttons:hover{
+    background: transparent;
+    border: 1px solid var(--white-color);
+    transform: translateX(4px);
+    transition: all .55s ease-in-out;
+}
+input[type="date"]{
+    color: var(--white-color);
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
 }
