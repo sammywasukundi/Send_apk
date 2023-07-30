@@ -41,6 +41,16 @@ create_btn.addEventListener('click', function(){
     }
 })
 
+const modify_btn = document.querySelector('#modify_bon');
+const hidden_form1 = document.querySelector('.formulaire');
+modify_btn.addEventListener('click', function(){
+    if(getComputedStyle(hidden_form1).visibility != 'visible'){
+        hidden_form1.style.visibility='visible';
+    }else{
+        hidden_form1.style.visibility='hidden';
+    }
+})
+
 function scroll(){
     document.getElementsByTagName("header").item(0).className="newClass";
 }
